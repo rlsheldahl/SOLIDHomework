@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomework\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|c:\\users\\rsheldahl\\source\\repos\\solidhomework\\solidhomework.core\\model\\mylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|solutionrelative:solidhomework.core\\model\\mylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|c:\\users\\rsheldahl\\source\\repos\\solidhomework\\solidhomework.core\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|solutionrelative:solidhomework.core\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|c:\\users\\rsheldahl\\source\\repos\\solidhomework\\solidhomework.core\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|solutionrelative:solidhomework.core\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{800280E3-D508-4307-AF9F-D81D4E05D6B0}|SOLIDHomework\\SOLIDHomework.csproj|c:\\users\\rsheldahl\\source\\repos\\solidhomework\\solidhomework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{800280E3-D508-4307-AF9F-D81D4E05D6B0}|SOLIDHomework\\SOLIDHomework.csproj|solutionrelative:solidhomework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,6 +79,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InventoryService.cs",
+              "DocumentMoniker": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomework\\SOLIDHomework.Core\\Services\\InventoryService.cs",
+              "RelativeDocumentMoniker": "SOLIDHomework.Core\\Services\\InventoryService.cs",
+              "ToolTip": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomework\\SOLIDHomework.Core\\Services\\InventoryService.cs",
+              "RelativeToolTip": "SOLIDHomework.Core\\Services\\InventoryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T12:31:34.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomework\\SOLIDHomework.Core\\OrderService.cs",
+              "RelativeDocumentMoniker": "SOLIDHomework.Core\\OrderService.cs",
+              "ToolTip": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomework\\SOLIDHomework.Core\\OrderService.cs",
+              "RelativeToolTip": "SOLIDHomework.Core\\OrderService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAEwCYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T12:31:34.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyLogger.cs",
+              "DocumentMoniker": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomework\\SOLIDHomework.Core\\Model\\MyLogger.cs",
+              "RelativeDocumentMoniker": "SOLIDHomework.Core\\Model\\MyLogger.cs",
+              "ToolTip": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomework\\SOLIDHomework.Core\\Model\\MyLogger.cs",
+              "RelativeToolTip": "SOLIDHomework.Core\\Model\\MyLogger.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAEwBoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T12:31:34.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomework\\SOLIDHomework\\Program.cs",
+              "RelativeDocumentMoniker": "SOLIDHomework\\Program.cs",
+              "ToolTip": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomework\\SOLIDHomework\\Program.cs",
+              "RelativeToolTip": "SOLIDHomework\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T12:31:29.532Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -76,6 +145,16 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1263,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             }
           ]
         }

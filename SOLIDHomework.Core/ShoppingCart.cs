@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SOLIDHomework.Core.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,49 +13,32 @@ namespace SOLIDHomework.Core
     {
         private readonly string country;
         private readonly List<OrderItem> orderItems;
+        private readonly IDiscountStrategy discountStrategy;
 
-        public ShoppingCart(string country)
+        public ShoppingCart(string country, IDiscountStrategy discountStrategy)
+        //public ShoppingCart(string country)
         {
             this.country = country;
+            this.discountStrategy = discountStrategy;
             orderItems = new List<OrderItem>();
         }
 
-        public IEnumerable<OrderItem> OrderItems
-        {
-            get { return orderItems; }
-        }
+        public IEnumerable<OrderItem> OrderItems => orderItems;
         public void Add(OrderItem orderItem)
         {
             orderItems.Add(orderItem);
         }
-        public decimal TotalAmount()
+        public decimal CalculateTotalAmount()
         {
             decimal total = 0;
-            
+
             foreach (var orderItem in OrderItems)
             {
-                if (orderItem.Type == "Unit")
-                {
-                    decimal unitDiscount = 0;
-                    //appply 20& discount for old seasons
-                    if (orderItem.SeassonEndDate <= DateTime.Now)
-                    {
-                        unitDiscount = 20;
-                    }
-                    total = orderItem.Amount * orderItem.Price * (1 - unitDiscount / 100m);
-                }
-                    //when buy 4 prodcuts - get one for free!
-                else if (orderItem.Type == "Special")
-                {
-                    total += orderItem.Amount * orderItem.Price;
-                    int setsOfFour = orderItem.Amount / 4;
-                    total -= setsOfFour * orderItem.Price; //discount on groups of 4 items
-                }
-
+                total += discountStrategy.ApplyDiscount(orderItem);
             }
-            if(country == "US")
+            if (country == "US")
             {
-                total *=1.2M;
+                total *= 1.2M;
             }
             else
             {
@@ -62,7 +46,5 @@ namespace SOLIDHomework.Core
             }
             return total;
         }
-
-       
     }
 }

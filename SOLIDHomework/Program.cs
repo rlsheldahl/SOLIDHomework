@@ -16,22 +16,57 @@ namespace SOLIDHomework
         static void Main(string[] args)
         {
             OrderService orderService = new OrderService();
-                ShoppingCart shoppingCart = new ShoppingCart("US");
-            shoppingCart.Add(new OrderItem()
+            var UnitDiscountStrategy = new UnitDiscountStrategy();
+            var SpecialDiscountStrategy = new SpecialDiscountStrategy();
+            var WeightStrategy = new WeightStrategy();
+            ShoppingCart shoppingCartUnit = new ShoppingCart("US", UnitDiscountStrategy);
+            shoppingCartUnit.Add(new OrderItem()
                 {
                     Amount = 1,
-                    SeassonEndDate =  DateTime.Now,
+                    SeasonEndDate =  DateTime.Now,
                     Code =  "Test",
                     Price =  10,
                     Type = "Unit"
                 });
-            orderService.Checkout("TestUser",shoppingCart,new PaymentDetails()
+            orderService.Checkout("TestUser",shoppingCartUnit,new PaymentDetails()
                 {
-                   CardholderName = "haha",
+                   CardholderName = "haha1",
                    CreditCardNumber =  "41111111111111",
                    ExpiryDate =  DateTime.Now.AddDays(10),
                    PaymentMethod = PaymentMethod.Cash
                 },true);
+            ShoppingCart shoppingCartSpecial = new ShoppingCart("US", SpecialDiscountStrategy);
+            shoppingCartSpecial.Add(new OrderItem()
+            {
+                Amount = 1,
+                SeasonEndDate = DateTime.Now,
+                Code = "Test",
+                Price = 10,
+                Type = "Special"
+            });
+            orderService.Checkout("TestUser", shoppingCartSpecial, new PaymentDetails()
+            {
+                CardholderName = "haha2",
+                CreditCardNumber = "41111111111112",
+                ExpiryDate = DateTime.Now.AddDays(10),
+                PaymentMethod = PaymentMethod.Cash
+            }, true);
+            ShoppingCart shoppingCartWeight = new ShoppingCart("US", WeightStrategy);
+            shoppingCartSpecial.Add(new OrderItem()
+            {
+                Amount = 1,
+                SeasonEndDate = DateTime.Now,
+                Code = "Test",
+                Price = 10,
+                Type = "Weight"
+            });
+            orderService.Checkout("TestUser", shoppingCartWeight, new PaymentDetails()
+            {
+                CardholderName = "haha3",
+                CreditCardNumber = "41111111111113",
+                ExpiryDate = DateTime.Now.AddDays(10),
+                PaymentMethod = PaymentMethod.Cash
+            }, true);
         }
     }
 }
