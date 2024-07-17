@@ -10,3 +10,9 @@ C:\Users\rsheldahl\SOLIDHomework\SOLIDHomework\SOLIDHomework.Core\obj\Debug\SOLI
 C:\Users\rsheldahl\SOLIDHomework\SOLIDHomework\SOLIDHomework.Core\obj\Debug\SOLIDHomework.Core.csproj.CoreCompileInputs.cache
 C:\Users\rsheldahl\SOLIDHomework\SOLIDHomework\SOLIDHomework.Core\obj\Debug\SOLIDHomework.Core.dll
 C:\Users\rsheldahl\SOLIDHomework\SOLIDHomework\SOLIDHomework.Core\obj\Debug\SOLIDHomework.Core.pdb
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework.Core\bin\Debug\SOLIDHomework.Core.dll
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework.Core\bin\Debug\SOLIDHomework.Core.pdb
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework.Core\obj\Debug\SOLIDHomework.Core.csproj.AssemblyReference.cache
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework.Core\obj\Debug\SOLIDHomework.Core.csproj.CoreCompileInputs.cache
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework.Core\obj\Debug\SOLIDHomework.Core.dll
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework.Core\obj\Debug\SOLIDHomework.Core.pdb

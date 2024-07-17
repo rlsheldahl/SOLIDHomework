@@ -21,3 +21,13 @@ C:\Users\rsheldahl\SOLIDHomework\SOLIDHomework\SOLIDHomework\obj\Debug\SOLIDHome
 C:\Users\rsheldahl\SOLIDHomework\SOLIDHomework\SOLIDHomework\obj\Debug\SOLIDHom.47946515.Up2Date
 C:\Users\rsheldahl\SOLIDHomework\SOLIDHomework\SOLIDHomework\obj\Debug\SOLIDHomework.exe
 C:\Users\rsheldahl\SOLIDHomework\SOLIDHomework\SOLIDHomework\obj\Debug\SOLIDHomework.pdb
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework\bin\Debug\SOLIDHomework.exe.config
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework\bin\Debug\SOLIDHomework.exe
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework\bin\Debug\SOLIDHomework.pdb
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework\bin\Debug\SOLIDHomework.Core.dll
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework\bin\Debug\SOLIDHomework.Core.pdb
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework\obj\Debug\SOLIDHomework.csproj.AssemblyReference.cache
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework\obj\Debug\SOLIDHomework.csproj.CoreCompileInputs.cache
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework\obj\Debug\SOLIDHom.47946515.Up2Date
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework\obj\Debug\SOLIDHomework.exe
+C:\Users\rsheldahl\source\repos\SOLIDHomework\SOLIDHomework\obj\Debug\SOLIDHomework.pdb

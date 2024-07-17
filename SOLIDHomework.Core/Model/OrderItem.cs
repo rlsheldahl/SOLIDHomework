@@ -11,7 +11,7 @@ namespace SOLIDHomework.Core
 
         public string Type { get; set; }
 
-        public DateTime SeassonEndDate { get; set; }
+        public DateTime SeasonEndDate { get; set; }
 
         public string Code { get; set; }
     }
