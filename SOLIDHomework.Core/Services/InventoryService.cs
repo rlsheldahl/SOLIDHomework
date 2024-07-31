@@ -1,11 +1,12 @@
-﻿using SOLIDHomework.Core.Model;
+﻿using SOLIDHomework.Core.Interfaces;
+using SOLIDHomework.Core.Model;
 using System;
 
 namespace SOLIDHomework.Core.Services
 {
-    public class InventoryService
+    public class InventoryService : IInventoryService
     {
-        // that is Database-based service 
+
         public void ReserveInventory(ShoppingCart cart)
         {
             foreach (OrderItem item in cart.OrderItems)
@@ -13,8 +14,7 @@ namespace SOLIDHomework.Core.Services
                 try
                 {
                     InventoryService inventoryService = new InventoryService();
-                    inventoryService.Reserve(item.Code, item.Amount);
-
+                    inventoryService.ReserveInventory(cart);
                 }
                 catch (InsufficientInventoryException ex)
                 {
@@ -25,9 +25,6 @@ namespace SOLIDHomework.Core.Services
                     throw new OrderException("Problem reserving inventory", ex);
                 }
             }
-        }
-        public void Reserve(string itemCode, int amount) 
-        { 
         }
     }
 }

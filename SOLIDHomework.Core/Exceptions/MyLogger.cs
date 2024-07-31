@@ -9,7 +9,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace SOLIDHomework.Core.Model
 {
-    public class MyLogger
+    public class MyLogger : ILogger
     {
         private readonly string filePath;
 
@@ -18,7 +18,27 @@ namespace SOLIDHomework.Core.Model
             filePath = ConfigurationManager.AppSettings["LogPath"];
         }
 
-        public void Write(string text)
+        public void Info(string text)
+        {
+            using (Stream file = File.OpenWrite(filePath))
+            {
+                using (StreamWriter writer = new StreamWriter(file))
+                {
+                    writer.WriteLine(text);
+                }
+            }
+        }
+        public void Warn(string text)
+        {
+            using (Stream file = File.OpenWrite(filePath))
+            {
+                using (StreamWriter writer = new StreamWriter(file))
+                {
+                    writer.WriteLine(text);
+                }
+            }
+        }
+        public void Error(string text)
         {
             using (Stream file = File.OpenWrite(filePath))
             {

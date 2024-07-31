@@ -1,4 +1,5 @@
-﻿using SOLIDHomework.Core.Model;
+﻿using SOLIDHomework.Core.Interfaces;
+using SOLIDHomework.Core.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,23 +12,25 @@ namespace SOLIDHomework.Core
     //
     public class ShoppingCart
     {
-        private readonly string country;
         private readonly List<OrderItem> orderItems;
         private readonly IDiscountStrategy discountStrategy;
+        private readonly ITaxCalculator taxCalculator;
 
-        public ShoppingCart(string country, IDiscountStrategy discountStrategy)
-        //public ShoppingCart(string country)
+        public ShoppingCart(IDiscountStrategy discountStrategy, ITaxCalculator taxCalculator)
         {
-            this.country = country;
             this.discountStrategy = discountStrategy;
+            this.taxCalculator = taxCalculator;
             orderItems = new List<OrderItem>();
         }
 
         public IEnumerable<OrderItem> OrderItems => orderItems;
+
         public void Add(OrderItem orderItem)
         {
             orderItems.Add(orderItem);
+
         }
+
         public decimal CalculateTotalAmount()
         {
             decimal total = 0;
@@ -36,14 +39,8 @@ namespace SOLIDHomework.Core
             {
                 total += discountStrategy.ApplyDiscount(orderItem);
             }
-            if (country == "US")
-            {
-                total *= 1.2M;
-            }
-            else
-            {
-                total *= 1.1M;
-            }
+
+            total = taxCalculator.ApplyTax(total);
             return total;
         }
     }
