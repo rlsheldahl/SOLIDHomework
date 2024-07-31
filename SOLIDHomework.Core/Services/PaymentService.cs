@@ -1,4 +1,5 @@
-﻿using SOLIDHomework.Core.Model;
+﻿using SOLIDHomework.Core.Interfaces;
+using SOLIDHomework.Core.Model;
 using SOLIDHomework.Core.Payment;
 using System;
 using System.Collections.Generic;
@@ -9,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace SOLIDHomework.Core.Services
 {
-    public class PaymentService
+    public class PaymentService : IPaymentService
     {
-        public void Charge(PaymentDetails paymentDetails, ShoppingCart cart)
+        public void ProcessPayment(PaymentDetails paymentDetails, ShoppingCart cart)
         {
             PaymentServiceType paymentServiceType;
             Enum.TryParse(ConfigurationManager.AppSettings["paymentType"], out paymentServiceType);

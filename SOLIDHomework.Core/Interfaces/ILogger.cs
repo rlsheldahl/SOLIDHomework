@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace SOLIDHomework.Core.Model
 {
-    public class OrderException : Exception
+    public interface ILogger
     {
-        public OrderException(string message, Exception innerException) : base(message, innerException)
-        {
-        }
+        void Info(string text);
+        void Warn(string text);
+        void Error(string text);
     }
 }
