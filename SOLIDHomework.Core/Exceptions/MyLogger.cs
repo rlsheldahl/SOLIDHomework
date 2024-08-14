@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SOLIDHomework.Core.Builder;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
@@ -20,25 +21,18 @@ namespace SOLIDHomework.Core.Model
 
         public void Info(string text)
         {
-            using (Stream file = File.OpenWrite(filePath))
-            {
-                using (StreamWriter writer = new StreamWriter(file))
-                {
-                    writer.WriteLine(text);
-                }
-            }
+            WriteToFile(text);
         }
         public void Warn(string text)
         {
-            using (Stream file = File.OpenWrite(filePath))
-            {
-                using (StreamWriter writer = new StreamWriter(file))
-                {
-                    writer.WriteLine(text);
-                }
-            }
+            WriteToFile(text);
         }
         public void Error(string text)
+        {
+            WriteToFile(text);
+        }
+
+        private void WriteToFile(string text)
         {
             using (Stream file = File.OpenWrite(filePath))
             {

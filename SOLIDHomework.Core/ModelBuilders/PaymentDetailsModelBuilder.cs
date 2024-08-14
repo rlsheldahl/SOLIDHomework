@@ -1,4 +1,5 @@
 ﻿using SOLIDHomework.Core.Model;
+using SOLIDHomework.Core.ModelBuilders.ModelBuilderInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,40 +8,40 @@ using System.Threading.Tasks;
 
 namespace SOLIDHomework.Core.Builder
 {
-    public class PaymentDetailsBuilder
+    public class PaymentDetailsModelBuilder : IPaymentDetailsModelBuilder
     {
-        private PaymentDetails _paymentDetails;
+        private PaymentDetailsModel _paymentDetails;
 
-        public PaymentDetailsBuilder()
+        public PaymentDetailsModelBuilder()
         {
-            _paymentDetails = new PaymentDetails();
+            _paymentDetails = new PaymentDetailsModel();
         }
 
-        public PaymentDetailsBuilder WithCardholderName(string name)
+        public IPaymentDetailsModelBuilder WithCardholderName(string name)
         {
             _paymentDetails.CardholderName = name;
             return this;
         }
 
-        public PaymentDetailsBuilder WithCreditCardNumber(string number)
+        public IPaymentDetailsModelBuilder WithCreditCardNumber(string number)
         {
             _paymentDetails.CreditCardNumber = number;
             return this;
         }
 
-        public PaymentDetailsBuilder WithExpiryDate(DateTime date)
+        public IPaymentDetailsModelBuilder WithExpiryDate(DateTime date)
         {
             _paymentDetails.ExpiryDate = date;
             return this;
         }
 
-        public PaymentDetailsBuilder WithPaymentMethod(PaymentMethod method)
+        public IPaymentDetailsModelBuilder WithPaymentMethod(PaymentMethod method)
         {
             _paymentDetails.PaymentMethod = method;
             return this;
         }
 
-        public PaymentDetails Build()
+        public PaymentDetailsModel Build()
         {
             return _paymentDetails;
         }

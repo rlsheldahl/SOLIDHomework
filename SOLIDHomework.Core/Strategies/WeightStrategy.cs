@@ -8,7 +8,7 @@ namespace SOLIDHomework.Core.Model
 {
     public class WeightStrategy : IDiscountStrategy
     {
-        public decimal ApplyDiscount(OrderItem orderItem)
+        public decimal ApplyDiscount(OrderItemModel orderItem)
         {
             return orderItem.Amount * orderItem.Price / 1000m;
         }

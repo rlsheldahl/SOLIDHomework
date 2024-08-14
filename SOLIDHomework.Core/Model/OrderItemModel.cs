@@ -2,7 +2,7 @@
 
 namespace SOLIDHomework.Core
 {
-    public class OrderItem
+    public class OrderItemModel
     {
         public int Amount { get; set; }
         public DateTime SeasonEndDate { get; set; }

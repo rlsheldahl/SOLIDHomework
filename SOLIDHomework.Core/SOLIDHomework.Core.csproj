@@ -59,12 +59,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Builder\OrderItemBuilder.cs" />
-    <Compile Include="Builder\PaymentDetailsBuilder.cs" />
-    <Compile Include="Builder\ShoppingCartBuilder.cs" />
-    <Compile Include="Builder\ShoppingCartUnitModelBuilder.cs" />
+    <Compile Include="ModelBuilders\ModelBuilderInterfaces\IOrderItemModelBuilder.cs" />
+    <Compile Include="ModelBuilders\ModelBuilderInterfaces\IPaymentDetailsModelBuilder.cs" />
+    <Compile Include="ModelBuilders\OrderItemModelBuilder.cs" />
+    <Compile Include="ModelBuilders\PaymentDetailsModelBuilder.cs" />
+    <Compile Include="ModelBuilders\ShoppingCartModelBuilder.cs" />
     <Compile Include="Interfaces\IInventoryService.cs" />
     <Compile Include="Interfaces\INotificationService.cs" />
+    <Compile Include="Interfaces\IOrderService.cs" />
     <Compile Include="Interfaces\IPaymentService.cs" />
     <Compile Include="Interfaces\ITaxCalculator.cs" />
     <Compile Include="Model\Account.cs" />
@@ -73,11 +75,10 @@
     <Compile Include="Interfaces\IDiscountStrategy.cs" />
     <Compile Include="Exceptions\MyLogger.cs" />
     <Compile Include="Exceptions\OrderException.cs" />
-    <Compile Include="Model\PaymentDetails.cs" />
+    <Compile Include="Model\PaymentDetailsModel.cs" />
     <Compile Include="Model\PaymentMethod.cs" />
-    <Compile Include="Model\OrderItem.cs" />
+    <Compile Include="Model\OrderItemModel.cs" />
     <Compile Include="Interfaces\ILogger.cs" />
-    <Compile Include="Model\ShoppingCart.cs" />
     <Compile Include="Payment\OtherCountryTaxCalculator.cs" />
     <Compile Include="Payment\USTaxCalculator.cs" />
     <Compile Include="Program.cs" />

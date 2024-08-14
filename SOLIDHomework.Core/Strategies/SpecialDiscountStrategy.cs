@@ -8,7 +8,7 @@ namespace SOLIDHomework.Core.Model
 {
     public class SpecialDiscountStrategy : IDiscountStrategy
     {
-        public decimal ApplyDiscount(OrderItem orderItem)
+        public decimal ApplyDiscount(OrderItemModel orderItem)
         {
             decimal total = orderItem.Amount * orderItem.Price;
             int setsOfFour = orderItem.Amount / 4;

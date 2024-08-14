@@ -8,6 +8,6 @@ namespace SOLIDHomework.Core.Model
 {
     public interface IDiscountStrategy
     {
-        decimal ApplyDiscount(OrderItem orderItem);
+        decimal ApplyDiscount(OrderItemModel orderItem);
     }
 }

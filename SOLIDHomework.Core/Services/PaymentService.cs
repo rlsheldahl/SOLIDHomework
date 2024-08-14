@@ -12,7 +12,7 @@ namespace SOLIDHomework.Core.Services
 {
     public class PaymentService : IPaymentService
     {
-        public void ProcessPayment(PaymentDetails paymentDetails, ShoppingCart cart)
+        public void ProcessPayment(PaymentDetailsModel paymentDetails, ShoppingCart cart)
         {
             PaymentServiceType paymentServiceType;
             Enum.TryParse(ConfigurationManager.AppSettings["paymentType"], out paymentServiceType);

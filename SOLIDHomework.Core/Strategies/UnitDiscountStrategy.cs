@@ -8,7 +8,7 @@ namespace SOLIDHomework.Core.Model
 {
     public class UnitDiscountStrategy : IDiscountStrategy
     {
-        public decimal ApplyDiscount(OrderItem orderItem)
+        public decimal ApplyDiscount(OrderItemModel orderItem)
         {
             decimal unitDiscount = 0;
             if (orderItem.SeasonEndDate <= DateTime.Now)

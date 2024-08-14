@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{800280E3-D508-4307-AF9F-D81D4E05D6B0}|SOLIDHomework\\SOLIDHomework.csproj|c:\\users\\rsheldahl\\source\\repos\\solidhomeworkcorrections\\solidhomework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{800280E3-D508-4307-AF9F-D81D4E05D6B0}|SOLIDHomework\\SOLIDHomework.csproj|solutionrelative:solidhomework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|c:\\users\\rsheldahl\\source\\repos\\solidhomeworkcorrections\\solidhomework.core\\modelbuilders\\shoppingcartmodelbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|solutionrelative:solidhomework.core\\modelbuilders\\shoppingcartmodelbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\solidhomework.core\\builder\\shoppingcartbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|solutionrelative:solidhomework.core\\builder\\shoppingcartbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|c:\\users\\rsheldahl\\source\\repos\\solidhomeworkcorrections\\solidhomework.core\\modelbuilders\\paymentdetailsmodelbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|solutionrelative:solidhomework.core\\modelbuilders\\paymentdetailsmodelbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|c:\\users\\rsheldahl\\source\\repos\\solidhomeworkcorrections\\solidhomework.core\\interfaces\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|solutionrelative:solidhomework.core\\interfaces\\iinventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|c:\\users\\rsheldahl\\source\\repos\\solidhomeworkcorrections\\solidhomework.core\\services\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|solutionrelative:solidhomework.core\\services\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|c:\\users\\rsheldahl\\source\\repos\\solidhomeworkcorrections\\solidhomework.core\\modelbuilders\\modelbuilderinterfaces\\ipaymentdetailsmodelbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10608E79-F289-4F72-9090-162C0CE94635}|SOLIDHomework.Core\\SOLIDHomework.Core.csproj|solutionrelative:solidhomework.core\\modelbuilders\\modelbuilderinterfaces\\ipaymentdetailsmodelbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -87,53 +83,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IInventoryService.cs",
-              "DocumentMoniker": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework.Core\\Interfaces\\IInventoryService.cs",
-              "RelativeDocumentMoniker": "SOLIDHomework.Core\\Interfaces\\IInventoryService.cs",
-              "ToolTip": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework.Core\\Interfaces\\IInventoryService.cs",
-              "RelativeToolTip": "SOLIDHomework.Core\\Interfaces\\IInventoryService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
+              "Title": "IPaymentDetailsModelBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework.Core\\ModelBuilders\\ModelBuilderInterfaces\\IPaymentDetailsModelBuilder.cs",
+              "RelativeDocumentMoniker": "SOLIDHomework.Core\\ModelBuilders\\ModelBuilderInterfaces\\IPaymentDetailsModelBuilder.cs",
+              "ToolTip": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework.Core\\ModelBuilders\\ModelBuilderInterfaces\\IPaymentDetailsModelBuilder.cs",
+              "RelativeToolTip": "SOLIDHomework.Core\\ModelBuilders\\ModelBuilderInterfaces\\IPaymentDetailsModelBuilder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T19:57:59.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ShoppingCart.cs",
-              "DocumentMoniker": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework.Core\\Services\\ShoppingCart.cs",
-              "RelativeDocumentMoniker": "SOLIDHomework.Core\\Services\\ShoppingCart.cs",
-              "ToolTip": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework.Core\\Services\\ShoppingCart.cs",
-              "RelativeToolTip": "SOLIDHomework.Core\\Services\\ShoppingCart.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA7wBkAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T18:28:49.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework\\Program.cs",
-              "RelativeDocumentMoniker": "SOLIDHomework\\Program.cs",
-              "ToolTip": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework\\Program.cs",
-              "RelativeToolTip": "SOLIDHomework\\Program.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAgwEoAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T18:25:43.959Z",
+              "WhenOpened": "2024-08-14T17:19:06.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ShoppingCartBuilder.cs",
-              "DocumentMoniker": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework.Core\\Builder\\ShoppingCartBuilder.cs",
-              "RelativeDocumentMoniker": "SOLIDHomework.Core\\Builder\\ShoppingCartBuilder.cs",
-              "ToolTip": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework.Core\\Builder\\ShoppingCartBuilder.cs",
-              "RelativeToolTip": "SOLIDHomework.Core\\Builder\\ShoppingCartBuilder.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAABJAAAA",
+              "Title": "PaymentDetailsModelBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework.Core\\ModelBuilders\\PaymentDetailsModelBuilder.cs",
+              "RelativeDocumentMoniker": "SOLIDHomework.Core\\ModelBuilders\\PaymentDetailsModelBuilder.cs",
+              "ToolTip": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework.Core\\ModelBuilders\\PaymentDetailsModelBuilder.cs",
+              "RelativeToolTip": "SOLIDHomework.Core\\ModelBuilders\\PaymentDetailsModelBuilder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T18:59:56.015Z",
+              "WhenOpened": "2024-08-14T17:16:41.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShoppingCartModelBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework.Core\\ModelBuilders\\ShoppingCartModelBuilder.cs",
+              "RelativeDocumentMoniker": "SOLIDHomework.Core\\ModelBuilders\\ShoppingCartModelBuilder.cs",
+              "ToolTip": "C:\\Users\\rsheldahl\\source\\repos\\SOLIDHomeworkCorrections\\SOLIDHomework.Core\\ModelBuilders\\ShoppingCartModelBuilder.cs*",
+              "RelativeToolTip": "SOLIDHomework.Core\\ModelBuilders\\ShoppingCartModelBuilder.cs*",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAACAAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T17:16:53.41Z",
               "EditorCaption": ""
             }
           ]

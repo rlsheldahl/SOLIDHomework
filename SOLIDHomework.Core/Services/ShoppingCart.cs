@@ -12,7 +12,7 @@ namespace SOLIDHomework.Core
     //
     public class ShoppingCart
     {
-        private readonly List<OrderItem> orderItems;
+        private readonly List<OrderItemModel> orderItems;
         private readonly IDiscountStrategy discountStrategy;
         private readonly ITaxCalculator taxCalculator;
 
@@ -20,12 +20,12 @@ namespace SOLIDHomework.Core
         {
             this.discountStrategy = discountStrategy;
             this.taxCalculator = taxCalculator;
-            orderItems = new List<OrderItem>();
+            orderItems = new List<OrderItemModel>();
         }
 
-        public IEnumerable<OrderItem> OrderItems => orderItems;
+        public IEnumerable<OrderItemModel> OrderItems => orderItems;
 
-        public void Add(OrderItem orderItem)
+        public void Add(OrderItemModel orderItem)
         {
             orderItems.Add(orderItem);
 

@@ -1,4 +1,5 @@
 ﻿using SOLIDHomework.Core.Model;
+using SOLIDHomework.Core.ModelBuilders.ModelBuilderInterfaces;
 using SOLIDHomework.Core.Payment;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SOLIDHomework.Core.Builder
 {
-    public class ShoppingCartBuilder
+    public class ShoppingCartModelBuilder
     {
         private ShoppingCart _shoppingCart;
         private SpecialDiscountStrategy _specialDiscountStrategy;
@@ -17,7 +18,7 @@ namespace SOLIDHomework.Core.Builder
         private USTaxCalculator _UStaxCalculator;
         private OtherCountryTaxCalculator _otherCountryTaxCalculator;
 
-        public ShoppingCartBuilder(string country)
+        public ShoppingCartModelBuilder(string country)
         {
             if (country == "US")
             {
@@ -29,7 +30,7 @@ namespace SOLIDHomework.Core.Builder
             }
         }
 
-        public ShoppingCartBuilder AddItem(OrderItem item)
+        public ShoppingCartModelBuilder AddItem(OrderItemModel item)
         {
             _shoppingCart.Add(item);
             return this;

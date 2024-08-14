@@ -9,6 +9,6 @@ namespace SOLIDHomework.Core.Interfaces
 {
     public interface IPaymentService
     {
-        void ProcessPayment(PaymentDetails paymentDetails, ShoppingCart cart);
+        void ProcessPayment(PaymentDetailsModel paymentDetails, ShoppingCart cart);
     }
 }

@@ -2,7 +2,7 @@
 
 namespace SOLIDHomework.Core.Model
 {
-    public class PaymentDetails
+    public class PaymentDetailsModel
     {
         public string CardholderName { get; set; }
         public string CreditCardNumber { get; set; }

@@ -37,8 +37,8 @@ namespace SOLIDHomework
             var _IInventoryService = serviceProvider.GetService<IInventoryService>();
             OrderService orderService = new OrderService(paymentService, inventoryService, notificationService, logger);
 
-            var shoppingCartUnit = new ShoppingCartBuilder("US")
-                .AddItem(new OrderItemBuilder()
+            var shoppingCartUnit = new ShoppingCartModelBuilder("US")
+                .AddItem(new OrderItemModelBuilder()
                     .WithAmount(1)
                     .WithSeassonEndDate(DateTime.Now)
                     .WithCode("Test")
@@ -47,15 +47,15 @@ namespace SOLIDHomework
                     .Build())
                 .Build();
 
-            orderService.Checkout("TestUser", shoppingCartUnit, new PaymentDetailsBuilder()
+            orderService.Checkout("TestUser", shoppingCartUnit, new PaymentDetailsModelBuilder()
                 .WithCardholderName("haha")
                 .WithCreditCardNumber("41111111111111")
                 .WithExpiryDate(DateTime.Now.AddDays(10))
                 .WithPaymentMethod(PaymentMethod.Cash)
                 .Build(), true);
 
-            var shoppingCartSpecial = new ShoppingCartBuilder("US")
-                .AddItem(new OrderItemBuilder()
+            var shoppingCartSpecial = new ShoppingCartModelBuilder("US")
+                .AddItem(new OrderItemModelBuilder()
                     .WithAmount(1)
                     .WithSeassonEndDate(DateTime.Now)
                     .WithCode("Test")
@@ -64,15 +64,15 @@ namespace SOLIDHomework
                     .Build())
                 .Build();
 
-            orderService.Checkout("TestUser2", shoppingCartSpecial, new PaymentDetailsBuilder()
+            orderService.Checkout("TestUser2", shoppingCartSpecial, new PaymentDetailsModelBuilder()
                 .WithCardholderName("haha2")
                 .WithCreditCardNumber("41111111111112")
                 .WithExpiryDate(DateTime.Now.AddDays(10))
                 .WithPaymentMethod(PaymentMethod.Cash)
                 .Build(), true);
 
-            var shoppingCartWeight = new ShoppingCartBuilder("US")
-                .AddItem(new OrderItemBuilder()
+            var shoppingCartWeight = new ShoppingCartModelBuilder("US")
+                .AddItem(new OrderItemModelBuilder()
                     .WithAmount(1)
                     .WithSeassonEndDate(DateTime.Now)
                     .WithCode("Test")
@@ -81,7 +81,7 @@ namespace SOLIDHomework
                     .Build())
                 .Build();
 
-            orderService.Checkout("TestUser3", shoppingCartWeight, new PaymentDetailsBuilder()
+            orderService.Checkout("TestUser3", shoppingCartWeight, new PaymentDetailsModelBuilder()
                 .WithCardholderName("haha3")
                 .WithCreditCardNumber("41111111111113")
                 .WithExpiryDate(DateTime.Now.AddDays(10))

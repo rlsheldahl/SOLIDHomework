@@ -9,7 +9,7 @@ namespace SOLIDHomework.Core.Services
 
         public void ReserveInventory(ShoppingCart cart)
         {
-            foreach (OrderItem item in cart.OrderItems)
+            foreach (OrderItemModel item in cart.OrderItems)
             {
                 try
                 {
