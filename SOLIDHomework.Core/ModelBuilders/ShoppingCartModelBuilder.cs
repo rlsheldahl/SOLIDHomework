@@ -1,45 +1,45 @@
 ﻿using SOLIDHomework.Core.Model;
 using SOLIDHomework.Core.ModelBuilders.ModelBuilderInterfaces;
 using SOLIDHomework.Core.Payment;
+using SOLIDHomework.Core.Services.ShoppingCartService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLIDHomework.Core.Builder
+namespace SOLIDHomework.Core.ModelBuilders
 {
-    public class ShoppingCartModelBuilder
+    public class ShoppingCartModelBuilder : IShoppingCartModelBuilder
     {
-        private ShoppingCart _shoppingCart;
+        private ShoppingCartService _model;
         private SpecialDiscountStrategy _specialDiscountStrategy;
         private UnitDiscountStrategy _unitDiscountStrategy;
         private WeightStrategy _weightStrategy;
         private USTaxCalculator _UStaxCalculator;
         private OtherCountryTaxCalculator _otherCountryTaxCalculator;
-
+            
         public ShoppingCartModelBuilder(string country)
         {
             if (country == "US")
             {
-                _shoppingCart = new ShoppingCart(_specialDiscountStrategy, _UStaxCalculator);
+                _model = new ShoppingCartService(_specialDiscountStrategy, _UStaxCalculator);
             }
             else
             {
-                _shoppingCart = new ShoppingCart(_specialDiscountStrategy, _otherCountryTaxCalculator);
+                _model = new ShoppingCartService(_specialDiscountStrategy, _otherCountryTaxCalculator);
             }
         }
 
-        public ShoppingCartModelBuilder AddItem(OrderItemModel item)
+        public IShoppingCartModelBuilder AddItem(IOrderItemModel item)
         {
-            _shoppingCart.Add(item);
+            _model.Add(item);
             return this;
         }
 
-        public ShoppingCart Build()
+        public ShoppingCartModel Build()
         {
-            return _shoppingCart;
+            return _model;
         }
-
     }
 }

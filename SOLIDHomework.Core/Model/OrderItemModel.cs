@@ -1,13 +1,18 @@
-﻿using System;
+﻿using SOLIDHomework.Core.Model;
+using System;
 
 namespace SOLIDHomework.Core
 {
-    public class OrderItemModel
+    public class OrderItemModel : IOrderItemModel
     {
-        public int Amount { get; set; }
-        public DateTime SeasonEndDate { get; set; }
-        public string Code { get; set; }
-        public decimal Price { get; set; }
         public string Type { get; set; }
+        public decimal Amount { get; set; }
+        public decimal Price { get; set; }
+        public DateTime SeasonEndDate { get; set; }
+
+        public decimal CalculateTotal()
+        {
+            return Amount * Price;
+        }
     }
 }

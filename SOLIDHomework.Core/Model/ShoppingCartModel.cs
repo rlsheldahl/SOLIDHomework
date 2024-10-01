@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace SOLIDHomework.Core.Model
 {
-    public class WeightStrategy : IDiscountStrategy
+    public class ShoppingCartModel
     {
-        public decimal ApplyDiscount(IOrderItemModel orderItem)
+        private readonly List<OrderItemModel> orderItems;
+
+        public void Add(OrderItemModel orderItem)
         {
-            return orderItem.Amount * orderItem.Price / 1000m;
+
+            orderItems.Add(orderItem);
         }
     }
 }

@@ -59,47 +59,138 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ModelBuilders\ModelBuilderInterfaces\IOrderItemModelBuilder.cs" />
-    <Compile Include="ModelBuilders\ModelBuilderInterfaces\IPaymentDetailsModelBuilder.cs" />
-    <Compile Include="ModelBuilders\OrderItemModelBuilder.cs" />
-    <Compile Include="ModelBuilders\PaymentDetailsModelBuilder.cs" />
+    <Compile Include="Configuration\ConfigurationManager.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ModelBuilders\AccountModelBuilder.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ModelBuilders\ModelBuilderInterfaces\IAccountModelBuilder.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ModelBuilders\ModelBuilderInterfaces\IOrderItemModelBuilder.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ModelBuilders\ModelBuilderInterfaces\IPaymentDetailsModelBuilder.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ModelBuilders\ModelBuilderInterfaces\IShoppingCartModelBuilder.cs" />
+    <Compile Include="ModelBuilders\OrderItemModelBuilder.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ModelBuilders\PaymentDetailsModelBuilder.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="ModelBuilders\ShoppingCartModelBuilder.cs" />
-    <Compile Include="Interfaces\IInventoryService.cs" />
-    <Compile Include="Interfaces\INotificationService.cs" />
-    <Compile Include="Interfaces\IOrderService.cs" />
-    <Compile Include="Interfaces\IPaymentService.cs" />
-    <Compile Include="Interfaces\ITaxCalculator.cs" />
-    <Compile Include="Model\Account.cs" />
-    <Compile Include="Exceptions\AccountBalanceMismatchException.cs" />
-    <Compile Include="Model\CreditCart.cs" />
-    <Compile Include="Interfaces\IDiscountStrategy.cs" />
-    <Compile Include="Exceptions\MyLogger.cs" />
-    <Compile Include="Exceptions\OrderException.cs" />
-    <Compile Include="Model\PaymentDetailsModel.cs" />
-    <Compile Include="Model\PaymentMethod.cs" />
-    <Compile Include="Model\OrderItemModel.cs" />
-    <Compile Include="Interfaces\ILogger.cs" />
-    <Compile Include="Payment\OtherCountryTaxCalculator.cs" />
-    <Compile Include="Payment\USTaxCalculator.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Services\NotificationService.cs" />
-    <Compile Include="Strategies\WeightStrategy.cs" />
-    <Compile Include="Strategies\SpecialDiscountStrategy.cs" />
-    <Compile Include="Strategies\UnitDiscountStrategy.cs" />
-    <Compile Include="Services\OrderService.cs" />
-    <Compile Include="Payment\PaymentBase.cs" />
-    <Compile Include="Payment\PaymentFactory.cs" />
-    <Compile Include="Model\PaymentServiceType.cs" />
-    <Compile Include="Payment\PayPalPayment.cs" />
-    <Compile Include="Payment\PayPalWebService.cs" />
-    <Compile Include="Payment\WorldPayPayment.cs" />
-    <Compile Include="Payment\WorldPayWebService.cs" />
+    <Compile Include="Model\ModelInterfaces\IOrderItemModel.cs" />
+    <Compile Include="Model\ShoppingCartModel.cs" />
+    <Compile Include="Payment\PaymentInterfaces\IPayment.cs" />
+    <Compile Include="Payment\PaymentInterfaces\IPayPalWebService.cs" />
+    <Compile Include="Services\InventoryServiceOLD\InventoryServiceInterfacesOLD\IInventoryServiceOLD.cs" />
+    <Compile Include="Services\EmailNotificationService\EmailNotificationServiceInterfaces\IEmailNotificationService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\InventoryService\InventoryService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\InventoryService\InventoryServiceInterfaces\IInventoryService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\OrderService\OrderServiceInterfaces\IOrderService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\PaymentService\PaymentServiceInterfaces\IPaymentService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\TaxCalculatorService\TaxCalCulatorServiceInterfaces\ITaxCalculatorService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Model\AccountModel.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Exceptions\AccountBalanceMismatchException.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Model\CreditCardModel.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\LoggerService\LoggerService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Exceptions\OrderException.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Model\PaymentDetailsModel.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Enums\PaymentMethod.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Model\OrderItemModel.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\LoggerService\LoggerServiceInterfaces\ILoggerService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\TaxCalculatorService\OtherCountryTaxCalculator.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\TaxCalculatorService\USTaxCalculator.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\EmailNotificationService\EmailNotificationService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\ShoppingCartService\ShoppingCartServiceInterfaces\IShoppingCartService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Strategies\StrategyInterfaces\IDiscountStrategy.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Strategies\WeightStrategy.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Strategies\SpecialDiscountStrategy.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Strategies\UnitDiscountStrategy.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\OrderService\OrderService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Factories\PaymentFactory.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Enums\PaymentServiceType.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Payment\PayPalPayment.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Payment\PayPalWebService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Payment\WorldPayPayment.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Payment\PaymentInterfaces\IWorldPayWebService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Exceptions\InsufficientInventoryException.cs" />
-    <Compile Include="Services\InventoryService.cs" />
-    <Compile Include="Services\PaymentService.cs" />
-    <Compile Include="Services\UserService.cs" />
-    <Compile Include="Services\ShoppingCart.cs" />
+    <Compile Include="Exceptions\InsufficientInventoryException.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\InventoryServiceOLD\InventoryServiceOLD.cs" />
+    <Compile Include="Services\PaymentService\PaymentService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\UserService\UserService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Services\ShoppingCartService\ShoppingCartService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
